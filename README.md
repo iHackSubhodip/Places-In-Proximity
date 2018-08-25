@@ -13,6 +13,9 @@
 ## API's used:
 
     • Google Nearby search: https://developers.google.com/places/web-service/search
+    
     • Google Place Photo: https://developers.google.com/places/web-service/photos
+    
     • Google Place Details: https://developers.google.com/places/web-service/details
+    
     • Google Places Api key: https://developers.google.com/places/web-service/get-api-key
