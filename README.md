@@ -1,4 +1,4 @@
-# Places-In-Proximity
+# Places In Proximity
 
 ### In this iOS Application, we will be able to see all the nearby places. 
 
