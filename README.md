@@ -2,13 +2,14 @@
 
 ### In this iOS Application, we will be able to see all the nearby places. 
 
-### i.e - Airports, Restaurants, School, Pharmacy, Atm etc. 
+####  i.e - Airports, Restaurants, School, Pharmacy, Atm etc. 
 
 ##  Dependencies:
 
-    • Alamofire
-    • AlamofireImage
-    • GoogleMaps
+  • Alamofire
+  • AlamofireImage
+  • GoogleMaps
+  
 
 ## API's used:
 
