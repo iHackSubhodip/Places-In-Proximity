@@ -7,7 +7,9 @@
 ##  Dependencies:
 
   • Alamofire
+  
   • AlamofireImage
+  
   • GoogleMaps
   
 
