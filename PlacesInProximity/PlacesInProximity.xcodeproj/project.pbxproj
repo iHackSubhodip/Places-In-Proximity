@@ -15,6 +15,7 @@
 		9055D9E521315F2900976025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9055D9E321315F2900976025 /* LaunchScreen.storyboard */; };
 		9055D9ED2131664F00976025 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9055D9EC2131664F00976025 /* README.md */; };
 		9055D9F82131705B00976025 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055D9F72131705B00976025 /* APIService.swift */; };
+		9055D9FB213175AD00976025 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055D9FA213175AD00976025 /* AppUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9055D9E621315F2900976025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlacesInProximity/Info.plist; sourceTree = SOURCE_ROOT; };
 		9055D9EC2131664F00976025 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9055D9F72131705B00976025 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9055D9FA213175AD00976025 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				9055D9F421316EE200976025 /* Model */,
 				9055D9F521316EF400976025 /* View */,
 				9055D9F621316F0200976025 /* Controller */,
+				9055D9F92131758B00976025 /* Utility */,
 				9055D9EE213166A900976025 /* Storyboards */,
 				9055D9EF2131670F00976025 /* Assets */,
 				9055D9DC21315F2800976025 /* ViewController.swift */,
@@ -150,6 +153,14 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9055D9F92131758B00976025 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9055D9FA213175AD00976025 /* AppUtility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		EFEBE99A22BAAB9E9A2E945B /* Frameworks */ = {
@@ -294,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9055D9FB213175AD00976025 /* AppUtility.swift in Sources */,
 				9055D9DD21315F2800976025 /* ViewController.swift in Sources */,
 				9055D9F82131705B00976025 /* APIService.swift in Sources */,
 				9055D9DB21315F2800976025 /* AppDelegate.swift in Sources */,
