@@ -21,12 +21,12 @@
 		24291B45ADB3ED07470D6939 /* Pods-PlacesInProximity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlacesInProximity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlacesInProximity/Pods-PlacesInProximity.debug.xcconfig"; sourceTree = "<group>"; };
 		24CDF2D58ABBED5931190EC4 /* Pods_PlacesInProximity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlacesInProximity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9055D9D721315F2800976025 /* PlacesInProximity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlacesInProximity.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9055D9DA21315F2800976025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9055D9DA21315F2800976025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PlacesInProximity/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		9055D9DC21315F2800976025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9055D9DF21315F2800976025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9055D9E121315F2900976025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9055D9E421315F2900976025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9055D9E621315F2900976025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9055D9E621315F2900976025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlacesInProximity/Info.plist; sourceTree = SOURCE_ROOT; };
 		9055D9EC2131664F00976025 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,13 +74,39 @@
 			isa = PBXGroup;
 			children = (
 				9055D9DA21315F2800976025 /* AppDelegate.swift */,
-				9055D9DC21315F2800976025 /* ViewController.swift */,
-				9055D9DE21315F2800976025 /* Main.storyboard */,
-				9055D9E121315F2900976025 /* Assets.xcassets */,
-				9055D9E321315F2900976025 /* LaunchScreen.storyboard */,
 				9055D9E621315F2900976025 /* Info.plist */,
+				9055D9EF2131670F00976025 /* Assets */,
+				9055D9EE213166A900976025 /* Storyboards */,
+				9055D9F02131674800976025 /* SupportingFiles */,
+				9055D9DC21315F2800976025 /* ViewController.swift */,
 			);
 			path = PlacesInProximity;
+			sourceTree = "<group>";
+		};
+		9055D9EE213166A900976025 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9055D9DE21315F2800976025 /* Main.storyboard */,
+				9055D9E321315F2900976025 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			path = PlacesInProximity/Storyboards;
+			sourceTree = SOURCE_ROOT;
+		};
+		9055D9EF2131670F00976025 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9055D9E121315F2900976025 /* Assets.xcassets */,
+			);
+			name = Assets;
+			path = PlacesInProximity/Assets;
+			sourceTree = SOURCE_ROOT;
+		};
+		9055D9F02131674800976025 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		EFEBE99A22BAAB9E9A2E945B /* Frameworks */ = {
@@ -239,7 +265,8 @@
 				9055D9DF21315F2800976025 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = PlacesInProximity/Storyboards;
+			sourceTree = SOURCE_ROOT;
 		};
 		9055D9E321315F2900976025 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -247,7 +274,8 @@
 				9055D9E421315F2900976025 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			path = PlacesInProximity/Storyboards;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
