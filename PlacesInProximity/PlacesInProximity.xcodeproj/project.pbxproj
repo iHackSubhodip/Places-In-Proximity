@@ -75,9 +75,8 @@
 			children = (
 				9055D9DA21315F2800976025 /* AppDelegate.swift */,
 				9055D9E621315F2900976025 /* Info.plist */,
-				9055D9EF2131670F00976025 /* Assets */,
 				9055D9EE213166A900976025 /* Storyboards */,
-				9055D9F02131674800976025 /* SupportingFiles */,
+				9055D9EF2131670F00976025 /* Assets */,
 				9055D9DC21315F2800976025 /* ViewController.swift */,
 			);
 			path = PlacesInProximity;
@@ -101,13 +100,6 @@
 			name = Assets;
 			path = PlacesInProximity/Assets;
 			sourceTree = SOURCE_ROOT;
-		};
-		9055D9F02131674800976025 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
 		};
 		EFEBE99A22BAAB9E9A2E945B /* Frameworks */ = {
 			isa = PBXGroup;
