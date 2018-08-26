@@ -26,6 +26,7 @@ struct AppConstants{
         static let widthKey = "width"
         static let heightKey = "height"
         static let photoRefKey = "photo_reference"
+        static let setPrefix = "category-"
     }
     
     struct APIEndPoint{
@@ -35,6 +36,11 @@ struct AppConstants{
     
     struct PhotoWidth{
         static let maxWidth = 600
+    }
+    
+    struct SegueIdentifier{
+        static let mapSegueIdentifier = "searchMaps"
+        static let categorySegueIdentifier = "searchCategory"
     }
     
 }
