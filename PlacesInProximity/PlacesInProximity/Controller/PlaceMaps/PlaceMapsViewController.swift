@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
 
 class PlaceMapsViewController: UIViewController {
 
+    var presentLocation:CLLocationCoordinate2D?
+    var places:[Places] = []
+    var index:Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
