@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct AppConstants{
     
@@ -47,5 +48,15 @@ struct AppConstants{
         static let categorySegueIdentifier = "searchCategory"
     }
     
+}
+
+final class AppUtility{
+    
+    static func errorGettingCurrentLocation(errorMessage:String, view:UIViewController) {
+        let alert = UIAlertController.init(title: "Error", message: errorMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+        view.parent?.present(alert, animated: true, completion: nil)
+        
+    }
 }
 

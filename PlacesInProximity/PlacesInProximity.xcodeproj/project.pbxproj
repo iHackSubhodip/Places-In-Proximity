@@ -24,6 +24,7 @@
 		9055DA0C21317B3800976025 /* PlacesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA0B21317B3800976025 /* PlacesCollectionViewController.swift */; };
 		9055DA1021317C5C00976025 /* PlaceMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA0F21317C5C00976025 /* PlaceMapsViewController.swift */; };
 		9055DA122132DF5C00976025 /* PlacesCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA112132DF5C00976025 /* PlacesCategoryViewController.swift */; };
+		9055DA14213321A200976025 /* PlacesCollectionViewController+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA13213321A200976025 /* PlacesCollectionViewController+Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		9055DA0B21317B3800976025 /* PlacesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewController.swift; sourceTree = "<group>"; };
 		9055DA0F21317C5C00976025 /* PlaceMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapsViewController.swift; sourceTree = "<group>"; };
 		9055DA112132DF5C00976025 /* PlacesCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCategoryViewController.swift; sourceTree = "<group>"; };
+		9055DA13213321A200976025 /* PlacesCollectionViewController+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCollectionViewController+Location.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				9055DA0B21317B3800976025 /* PlacesCollectionViewController.swift */,
+				9055DA13213321A200976025 /* PlacesCollectionViewController+Location.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9055DA1021317C5C00976025 /* PlaceMapsViewController.swift in Sources */,
+				9055DA14213321A200976025 /* PlacesCollectionViewController+Location.swift in Sources */,
 				9055DA0721317A5300976025 /* PlacesCollectionViewCell.swift in Sources */,
 				9055D9FF2131776900976025 /* PlacesPhoto.swift in Sources */,
 				9055D9FD2131775D00976025 /* Places.swift in Sources */,
