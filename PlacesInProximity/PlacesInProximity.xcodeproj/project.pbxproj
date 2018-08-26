@@ -23,8 +23,8 @@
 		9055DA05213177B000976025 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA04213177B000976025 /* Reusable.swift */; };
 		9055DA0721317A5300976025 /* PlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA0621317A5300976025 /* PlacesCollectionViewCell.swift */; };
 		9055DA0C21317B3800976025 /* PlacesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA0B21317B3800976025 /* PlacesCollectionViewController.swift */; };
-		9055DA0E21317C3900976025 /* PlacesCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA0D21317C3900976025 /* PlacesCategoryTableViewController.swift */; };
 		9055DA1021317C5C00976025 /* PlaceMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA0F21317C5C00976025 /* PlaceMapsViewController.swift */; };
+		9055DA122132DF5C00976025 /* PlacesCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA112132DF5C00976025 /* PlacesCategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +48,8 @@
 		9055DA04213177B000976025 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		9055DA0621317A5300976025 /* PlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewCell.swift; sourceTree = "<group>"; };
 		9055DA0B21317B3800976025 /* PlacesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewController.swift; sourceTree = "<group>"; };
-		9055DA0D21317C3900976025 /* PlacesCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCategoryTableViewController.swift; sourceTree = "<group>"; };
 		9055DA0F21317C5C00976025 /* PlaceMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapsViewController.swift; sourceTree = "<group>"; };
+		9055DA112132DF5C00976025 /* PlacesCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +209,7 @@
 		9055DA0A21317B1D00976025 /* PlacesCategory */ = {
 			isa = PBXGroup;
 			children = (
-				9055DA0D21317C3900976025 /* PlacesCategoryTableViewController.swift */,
+				9055DA112132DF5C00976025 /* PlacesCategoryViewController.swift */,
 			);
 			path = PlacesCategory;
 			sourceTree = "<group>";
@@ -320,11 +320,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PlacesInProximity/Pods-PlacesInProximity-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -363,8 +365,8 @@
 				9055D9FB213175AD00976025 /* AppUtility.swift in Sources */,
 				9055DA05213177B000976025 /* Reusable.swift in Sources */,
 				9055D9DD21315F2800976025 /* ViewController.swift in Sources */,
+				9055DA122132DF5C00976025 /* PlacesCategoryViewController.swift in Sources */,
 				9055D9F82131705B00976025 /* APIService.swift in Sources */,
-				9055DA0E21317C3900976025 /* PlacesCategoryTableViewController.swift in Sources */,
 				9055DA012131779200976025 /* PlacesCategory.swift in Sources */,
 				9055DA032131779F00976025 /* PlacesResponse.swift in Sources */,
 				9055DA0C21317B3800976025 /* PlacesCollectionViewController.swift in Sources */,

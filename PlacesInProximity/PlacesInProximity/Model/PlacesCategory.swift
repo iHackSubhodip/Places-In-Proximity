@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct PlacesCategory{
+    
+    var name: String
+    init(name: String){
+        self.name = name
+    }
+}
+
+extension PlacesCategory: ExpressibleByStringLiteral{
+    
+    init(stringLiteral value: String){
+        self.name = value
+    }
+}

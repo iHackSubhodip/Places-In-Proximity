@@ -10,5 +10,8 @@ import Foundation
 
 class APIService{
     
+    static func googlePhotoURL(photoReference:String, maxWidth:Int) -> URL? {
+        return URL.init(string: "\(AppConstants.APIEndPoint.searchApiHost)?maxwidth=\(maxWidth)&key=\(AppDelegate.palcesAPIKey)&photoreference=\(photoReference)")
+    }
     
 }

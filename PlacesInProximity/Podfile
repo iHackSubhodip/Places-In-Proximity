@@ -9,5 +9,6 @@ target 'PlacesInProximity' do
     pod 'Alamofire'
     pod 'AlamofireImage'
     pod 'GoogleMaps'
+    pod 'IQKeyboardManagerSwift'
 
 end
