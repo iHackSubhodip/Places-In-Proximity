@@ -21,6 +21,7 @@ class PlacesCategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Places In Proximity"
         [radiusTextField, searchTextField].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
     }
 

@@ -98,7 +98,6 @@
 				9055D9DA21315F2800976025 /* AppDelegate.swift */,
 				9055D9E621315F2900976025 /* Info.plist */,
 				9055D9F121316E9A00976025 /* API */,
-				9055D9F221316EA800976025 /* Networking */,
 				9055D9F321316EBD00976025 /* Protocols */,
 				9055D9F421316EE200976025 /* Model */,
 				9055D9F521316EF400976025 /* View */,
@@ -136,13 +135,6 @@
 				9055D9F72131705B00976025 /* APIService.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		9055D9F221316EA800976025 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		9055D9F321316EBD00976025 /* Protocols */ = {

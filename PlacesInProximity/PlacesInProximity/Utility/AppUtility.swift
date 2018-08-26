@@ -27,6 +27,10 @@ struct AppConstants{
         static let heightKey = "height"
         static let photoRefKey = "photo_reference"
         static let setPrefix = "category-"
+        static let notOK = "NOK"
+        static let ok = "OK"
+        static let status = "status"
+        static let nextToken = "next_page_token"
     }
     
     struct APIEndPoint{
