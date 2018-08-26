@@ -25,6 +25,7 @@
 		9055DA1021317C5C00976025 /* PlaceMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA0F21317C5C00976025 /* PlaceMapsViewController.swift */; };
 		9055DA122132DF5C00976025 /* PlacesCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA112132DF5C00976025 /* PlacesCategoryViewController.swift */; };
 		9055DA14213321A200976025 /* PlacesCollectionViewController+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA13213321A200976025 /* PlacesCollectionViewController+Location.swift */; };
+		9055DA1621332BA000976025 /* PlacesCollectionViewController+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055DA1521332BA000976025 /* PlacesCollectionViewController+Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9055DA0F21317C5C00976025 /* PlaceMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapsViewController.swift; sourceTree = "<group>"; };
 		9055DA112132DF5C00976025 /* PlacesCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCategoryViewController.swift; sourceTree = "<group>"; };
 		9055DA13213321A200976025 /* PlacesCollectionViewController+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCollectionViewController+Location.swift"; sourceTree = "<group>"; };
+		9055DA1521332BA000976025 /* PlacesCollectionViewController+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlacesCollectionViewController+Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				9055DA0B21317B3800976025 /* PlacesCollectionViewController.swift */,
+				9055DA1521332BA000976025 /* PlacesCollectionViewController+Data.swift */,
 				9055DA13213321A200976025 /* PlacesCollectionViewController+Location.swift */,
 			);
 			path = Places;
@@ -358,6 +361,7 @@
 				9055D9FB213175AD00976025 /* AppUtility.swift in Sources */,
 				9055DA05213177B000976025 /* Reusable.swift in Sources */,
 				9055DA122132DF5C00976025 /* PlacesCategoryViewController.swift in Sources */,
+				9055DA1621332BA000976025 /* PlacesCollectionViewController+Data.swift in Sources */,
 				9055D9F82131705B00976025 /* APIService.swift in Sources */,
 				9055DA012131779200976025 /* PlacesCategory.swift in Sources */,
 				9055DA032131779F00976025 /* PlacesResponse.swift in Sources */,

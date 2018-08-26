@@ -24,15 +24,19 @@ class PlacesCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         category?.markView()
-        getMyPresentLocation()
     }
     
     func setupCollectionView(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        appDelegate.locationManager.delegate = self
         self.title = category?.name
         collectionView?.contentInset = UIEdgeInsets.init(top: 0, left: 15.0, bottom: 0, right: 15.0)
     }

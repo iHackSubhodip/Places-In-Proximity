@@ -10,21 +10,12 @@ import UIKit
 import CoreLocation
 
 extension PlacesCollectionViewController: CLLocationManagerDelegate{
-    func getMyPresentLocation(){
-        guard presentLocation == nil else{
-            return
-        }
-        
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-    }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
         let userLocation:CLLocation = locations[0] as CLLocation
         presentLocation = userLocation.coordinate
-        //here to start the work
+        loadPlacesInProximity(true)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

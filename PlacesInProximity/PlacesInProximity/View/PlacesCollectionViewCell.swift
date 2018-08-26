@@ -23,9 +23,10 @@ class PlacesCollectionViewCell: UICollectionViewCell {
         
         if let url = place.photos?.first?.getPhotoUrl(photoMaxWidth: AppConstants.PhotoWidth.maxWidth) {
             imageView.af_setImage(withURL: url)
-        }else{
-            imageView.image = UIImage.init(named: "default_image")
         }
+//        else{
+//            imageView.image = UIImage.init(named: "default_image")
+//        }
     }
     
 }

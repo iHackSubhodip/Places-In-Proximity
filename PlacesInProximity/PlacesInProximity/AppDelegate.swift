@@ -16,12 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     static let mapsAPIKey = "AIzaSyC1G9DGJ_p420G5Rwl_P_AyApNC2hvgnD4"
     static let palcesAPIKey = "AIzaSyD3lzXUiOFBDbqCIKoLqdhSp0-fBTfxcDY"
+    let locationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         IQKeyboardManager.shared.enable = true
         GMSServices.provideAPIKey(AppDelegate.mapsAPIKey)
+        registerLocationManager()
         return true
+    }
+    
+    func registerLocationManager() {
+        if CLLocationManager.authorizationStatus() != .authorizedWhenInUse {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
     }
     
 }
