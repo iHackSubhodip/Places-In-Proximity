@@ -11,33 +11,13 @@ import UIKit
 
 extension PlacesCollectionViewController{
     
-    func canLoadMore() -> Bool {
-        if isLoading {
-            return false
-        }
-        
-        if let response = self.response {
-            if (!response.canLoadMore()) {
-                return false
-            }
-        }
-        
-        return true
-    }
-    
     func loadPlacesInProximity(_ force:Bool) {
-        
-        if !force {
-            if !canLoadMore() {
-                return
-            }
-        }
-        isLoading = true
         APIService.getNearbyPlaces(by: category?.name ?? "airport", coordinates: presentLocation!, radius: radius, token: self.response?.nextPageToken, completion: didReceiveResponse)
     
     }
     
     func didReceiveResponse(response:PlacesResponse?) -> Void {
+        activityIndicatorView.stopAnimating()
         self.response = response
         if response?.status == AppConstants.APIConstants.ok {
             
@@ -47,17 +27,16 @@ extension PlacesCollectionViewController{
             
             self.collectionView?.reloadData()
         } else {
-            //optimize the code
             let alert = UIAlertController.init(title: "Error", message: response?.status.description, preferredStyle: .alert)
             alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: { (action) in
                 self.navigationController?.popViewController(animated: true)
             }))
             alert.addAction(UIAlertAction.init(title: "Retry", style: .default, handler: { (action) in
+                self.activityIndicatorView.startAnimating()
                 self.loadPlacesInProximity(true)
             }))
             present(alert, animated: true, completion: nil)
         }
-        isLoading = false
     }
     
 }

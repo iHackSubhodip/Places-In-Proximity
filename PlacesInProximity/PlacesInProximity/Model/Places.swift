@@ -64,22 +64,22 @@ class Places: NSObject{
         var subHeader : [String] = []
         
         if let name = name {
-            subHeader.append("Name: \(name)")
+            subHeader.append("NAME :- \(name)")
         }
         
         if let vicinity = vicinity {
-            subHeader.append("Vicinity: \(vicinity)")
+            subHeader.append("VICINITY :- \(vicinity)")
         }
         
         if let types = types {
-            subHeader.append("Types: \(types.joined(separator: ", "))")
+            subHeader.append("TYPE :- \(types.joined(separator: ", "))")
         }
         
         if let isOpen = isOpen {
-            subHeader.append(isOpen ? "OPEN NOW" : "CLOSED NOW")
+            subHeader.append(isOpen ? "STATUS :- Open Now" : "STATUS :- Closed Now")
         }
         
-        return subHeader.joined(separator: "\n")
+        return subHeader.joined(separator: "\n\n")
     }
     
 }

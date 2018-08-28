@@ -148,25 +148,18 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="95N-Bd-c6U">
                                             <rect key="frame" x="0.0" y="0.0" width="228" height="215"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8W-df-Lsr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="228" height="187"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI1-CU-i6r">
-                                                    <rect key="frame" x="15" y="192" width="198" height="18"/>
+                                                    <rect key="frame" x="15" y="5" width="198" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.78205583479999996" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.9828871214075473" green="1" blue="0.94879346346951621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstItem="lI1-CU-i6r" firstAttribute="top" secondItem="F8W-df-Lsr" secondAttribute="bottom" constant="5" id="2EW-Xz-kUE"/>
-                                                <constraint firstItem="F8W-df-Lsr" firstAttribute="top" secondItem="95N-Bd-c6U" secondAttribute="top" id="3mN-t7-2fh"/>
                                                 <constraint firstItem="lI1-CU-i6r" firstAttribute="leading" secondItem="95N-Bd-c6U" secondAttribute="leading" constant="15" id="5Xy-wk-1fa"/>
+                                                <constraint firstItem="lI1-CU-i6r" firstAttribute="top" secondItem="95N-Bd-c6U" secondAttribute="top" constant="5" id="A8x-ki-iOi"/>
                                                 <constraint firstAttribute="trailing" secondItem="lI1-CU-i6r" secondAttribute="trailing" constant="15" id="GZj-h7-2Co"/>
-                                                <constraint firstItem="F8W-df-Lsr" firstAttribute="leading" secondItem="95N-Bd-c6U" secondAttribute="leading" id="QGb-8v-87q"/>
-                                                <constraint firstAttribute="trailing" secondItem="F8W-df-Lsr" secondAttribute="trailing" id="QL4-MP-gWo"/>
-                                                <constraint firstAttribute="bottom" secondItem="lI1-CU-i6r" secondAttribute="bottom" constant="5" id="sKX-Uk-n6i"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -179,7 +172,6 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="containerView" destination="95N-Bd-c6U" id="qDd-lG-4Yo"/>
-                                    <outlet property="imageView" destination="F8W-df-Lsr" id="VU4-BX-vkO"/>
                                     <outlet property="placesLabel" destination="lI1-CU-i6r" id="K1M-78-Uaz"/>
                                 </connections>
                             </collectionViewCell>

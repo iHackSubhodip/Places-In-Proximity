@@ -36,7 +36,6 @@ struct AppConstants{
     
     struct APIEndPoint{
         static let searchApiHost = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
-        static let googlePhotosHost = "https://maps.googleapis.com/maps/api/place/photo"
     }
     
     struct PhotoWidth{
@@ -59,4 +58,3 @@ final class AppUtility{
         
     }
 }
-

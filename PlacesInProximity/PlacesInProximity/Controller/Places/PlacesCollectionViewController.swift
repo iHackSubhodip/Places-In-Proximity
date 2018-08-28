@@ -17,9 +17,9 @@ class PlacesCollectionViewController: UICollectionViewController {
     var presentLocation: CLLocationCoordinate2D?
     var places: [Places] = []
     var response: PlacesResponse?
-    var isLoading = false
     var locationManager: CLLocationManager?
     var radius = 0
+    var activityIndicatorView: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class PlacesCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         places.removeAll()
+        activityIndicatorView.startAnimating()
         determinePrestntLocation()
     }
     
@@ -38,8 +39,10 @@ class PlacesCollectionViewController: UICollectionViewController {
     }
     
     func setupCollectionView(){
-        self.title = category?.name
-        collectionView?.contentInset = UIEdgeInsets.init(top: 0, left: 15.0, bottom: 0, right: 15.0)
+        self.title = category?.name.uppercased()
+        collectionView?.contentInset = UIEdgeInsets.init(top: 0, left: 30.0, bottom: 0, right: 30.0)
+        activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        collectionView?.backgroundView = activityIndicatorView
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -83,44 +86,25 @@ extension PlacesCollectionViewController{
 }
 
 // MARK: 'UICollectionViewDelegateFlowLayout'
-extension PlacesCollectionViewController{
+extension PlacesCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 15.0
+        return 0.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10.0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let cellPadding: CGFloat = 20.0
         let columnWidth:CGFloat = 250
-        let imageWidth = columnWidth
         let labelWidth = columnWidth - cellPadding * 2
-        
-        let photoHeight = heightForPhotoAtIndexPath(indexPath: indexPath, withWidth: imageWidth)
         let annotationHeight = heightForAnnotationAtIndexPath(indexPath: indexPath, withWidth: labelWidth)
-        let height = photoHeight + annotationHeight
-        
-        return CGSize.init(width: columnWidth, height: height)
+        return CGSize(width: collectionView.frame.width/3, height: annotationHeight * 2)
     }
-    
-    // MARK: Calculates the height of photo
-    func heightForPhotoAtIndexPath(indexPath: IndexPath,
-                                   withWidth width: CGFloat) -> CGFloat {
-        
-        var size = CGSize.init(width: CGFloat(MAXFLOAT), height: 1)
-        let place = places[indexPath.row]
-        
-        guard let photo = place.photos?.first, place.photos?.first?.photoRefKey != nil, let widthP = photo.width, let heightP = photo.height else {
-            return 0
-        }
-        
-        size = CGSize.init(width: CGFloat(widthP), height: CGFloat(heightP))
-        
-        let boundingRect =  CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
-        let rect  = AVMakeRect(aspectRatio: size, insideRect: boundingRect)
-        
-        return rect.size.height
-    }
+
     
     // MARK: Calculates the height label
     func heightForAnnotationAtIndexPath(indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
