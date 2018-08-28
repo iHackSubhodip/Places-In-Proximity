@@ -24,7 +24,12 @@ class PlacesCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        places.removeAll()
+        determinePrestntLocation()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -33,10 +38,6 @@ class PlacesCollectionViewController: UICollectionViewController {
     }
     
     func setupCollectionView(){
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
-            return
-        }
-        appDelegate.locationManager.delegate = self
         self.title = category?.name
         collectionView?.contentInset = UIEdgeInsets.init(top: 0, left: 15.0, bottom: 0, right: 15.0)
     }

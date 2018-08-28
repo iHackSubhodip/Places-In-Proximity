@@ -11,6 +11,17 @@ import CoreLocation
 
 extension PlacesCollectionViewController: CLLocationManagerDelegate{
     
+    func determinePrestntLocation() {
+        guard presentLocation == nil else {
+            return
+        }
+        
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager?.requestWhenInUseAuthorization()
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
         let userLocation:CLLocation = locations[0] as CLLocation
