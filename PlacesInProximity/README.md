@@ -10,12 +10,11 @@
   
   • AlamofireImage
   
-  • GoogleMaps
+  • IQKeyboardManagerSwift
   
 
 ## API's used:
 
    • Google Nearby search: https://developers.google.com/places/web-service/search
     
-   • Google Place Photo: https://developers.google.com/places/web-service/photos
    
