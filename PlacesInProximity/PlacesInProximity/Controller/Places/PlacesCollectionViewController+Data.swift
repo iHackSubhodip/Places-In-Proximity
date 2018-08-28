@@ -12,6 +12,7 @@ import UIKit
 extension PlacesCollectionViewController{
     
     func loadPlacesInProximity(_ force:Bool) {
+        activityIndicatorView.startAnimating()
         APIService.getNearbyPlaces(by: category?.name ?? "airport", coordinates: presentLocation!, radius: radius, token: self.response?.nextPageToken, completion: didReceiveResponse)
     
     }

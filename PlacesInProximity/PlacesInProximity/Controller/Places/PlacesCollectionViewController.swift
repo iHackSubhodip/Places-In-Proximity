@@ -20,7 +20,7 @@ class PlacesCollectionViewController: UICollectionViewController {
     var locationManager: CLLocationManager?
     var radius = 0
     var activityIndicatorView: UIActivityIndicatorView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
@@ -29,7 +29,6 @@ class PlacesCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         places.removeAll()
-        activityIndicatorView.startAnimating()
         determinePrestntLocation()
     }
     

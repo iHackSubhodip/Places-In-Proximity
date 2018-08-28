@@ -204,7 +204,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQx-QF-zHX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-Pb-mMa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="waP-9l-iik" id="4OB-UT-e41"/>
+                                        </connections>
+                                    </mapView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6g7-Pb-mMa" firstAttribute="top" secondItem="JQx-QF-zHX" secondAttribute="top" id="4ve-LO-BPU"/>
+                                    <constraint firstItem="6g7-Pb-mMa" firstAttribute="leading" secondItem="JQx-QF-zHX" secondAttribute="leading" id="7nl-qL-JGJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6g7-Pb-mMa" secondAttribute="trailing" id="ngO-6U-2v0"/>
+                                    <constraint firstAttribute="bottom" secondItem="6g7-Pb-mMa" secondAttribute="bottom" id="z9B-yr-aYg"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUw-kw-bge">
                                 <rect key="frame" x="0.0" y="613" width="375" height="54"/>
@@ -246,6 +260,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j0v-iY-603"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomView" destination="EUw-kw-bge" id="dla-f6-MjB"/>
+                        <outlet property="descriptionLabel" destination="s9F-vP-omX" id="WrC-cV-v9J"/>
+                        <outlet property="distanceLabel" destination="Y9N-jz-kkP" id="QyO-4V-2pS"/>
+                        <outlet property="mapView" destination="6g7-Pb-mMa" id="5Sy-RZ-qcE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wb0-XD-qfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
