@@ -20,6 +20,7 @@ class PlacesCollectionViewController: UICollectionViewController {
     var locationManager: CLLocationManager?
     var radius = 0
     var activityIndicatorView: UIActivityIndicatorView!
+    var isFromCategoryScreen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,11 @@ class PlacesCollectionViewController: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        places.removeAll()
-        determinePrestntLocation()
+        if isFromCategoryScreen{
+            isFromCategoryScreen = false
+            places.removeAll()
+            determinePrestntLocation()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

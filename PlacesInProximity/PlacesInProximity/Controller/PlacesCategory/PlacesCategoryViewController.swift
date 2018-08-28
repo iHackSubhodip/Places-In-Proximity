@@ -39,6 +39,7 @@ class PlacesCategoryViewController: UIViewController {
             if let vc = segue.destination as? PlacesCollectionViewController {
                 vc.category = category
                 vc.radius = Int(radiusTextField.text!)!
+                vc.isFromCategoryScreen = true
             }
         }
     }
